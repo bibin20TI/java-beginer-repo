@@ -6,7 +6,7 @@ class PencarianBiner {
           int data[] = {2,5,6,9,12,15,20};
 
           int tengah = data.length/2;
-          int cari = 5;
+          int cari = 100;
           boolean ketemu = false;
            
            if(cari == data[tengah]){
@@ -21,6 +21,14 @@ class PencarianBiner {
            	   			break;
            	   		}
            	   	}
+           	   }else {
+           	   	   for(int j = tengah+1; j < data.length; j++){
+           	   	   	 if(cari == data[j]){
+           	   	   	 	System.out.print("data di temukan pada indek ke - "+j);
+           	   	   	 	ketemu = true;
+           	   	   	 	break;
+           	   	   	 }
+           	   	   }
            	   }
            }
           if(ketemu == false){
